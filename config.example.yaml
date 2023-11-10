@@ -1,0 +1,199 @@
+schedule:
+  - time: "06:00"
+    prompt: grammar
+  - time: "18:00"
+    prompt: vocabulary
+telegram:
+  api_key: 'telegram-api-key'
+  channel: telegram_channel
+chatgpt:
+  api_key: 'chatgpt-api-key'
+  timeout: 1m
+  prompts:
+    - name: grammar
+      template: >
+        I am learning Dutch. My today's topic is %s. Briefly explain it and
+        give a few examples with translations.
+      arguments:
+        - 'dutch alphabet and pronunciation - unique sounds: "ij", "ui", "eu"'
+        - 'dutch alphabet and pronunciation - pronunciation of vowels'
+        - 'dutch alphabet and pronunciation - pronunciation of consonants'
+        - 'basic greetings and introductions - common greetings: "hallo", "goedemorgen"'
+        - 'basic greetings and introductions - self-introduction phrases'
+        - 'basic greetings and introductions - polite expressions: "dank je", "alstublieft"'
+        - 'numbers (1-100) - counting 1-20'
+        - 'numbers (1-100) - tens and compound numbers (21-100)'
+        - 'numbers (1-100) - using numbers in context'
+        - 'days of the week - names of the days'
+        - 'days of the week - using days in sentences'
+        - 'days of the week - questions about days'
+        - 'months and seasons - names of months'
+        - 'months and seasons - names of seasons'
+        - 'months and seasons - talking about dates and months'
+        - 'basic verbs - common verbs: "zijn", "hebben", "gaan"'
+        - 'basic verbs - simple sentences using basic verbs'
+        - 'basic verbs - verb pronunciation'
+        - 'present tense regular verbs - conjugation patterns'
+        - 'present tense regular verbs - subject-verb agreement'
+        - 'present tense regular verbs - sentence formation'
+        - 'present tense irregular verbs - common irregular verbs: "doen", "komen"'
+        - 'present tense irregular verbs - irregular verb conjugations'
+        - 'present tense irregular verbs - using irregular verbs in context'
+        - 'articles (de and het) - rules for "de" and "het"'
+        - 'articles (de and het) - gender of nouns'
+        - 'articles (de and het) - article usage in sentences'
+        - 'indefinite article (een) - usage of "een"'
+        - 'indefinite article (een) - indefinite articles in context'
+        - 'indefinite article (een) - difference between definite and indefinite articles'
+        - 'plural nouns - regular plural forms: "-en", "-s"'
+        - 'plural nouns - irregular plural forms'
+        - 'plural nouns - plurals in sentences'
+        - 'question words - common question words: "wie", "wat", "waar"'
+        - 'question words - forming basic questions'
+        - 'question words - question word placement'
+        - 'basic adjectives - common adjectives'
+        - 'basic adjectives - adjective agreement with nouns'
+        - 'basic adjectives - placement of adjectives in sentences'
+        - 'comparatives and superlatives - forming comparative adjectives'
+        - 'comparatives and superlatives - forming superlative adjectives'
+        - 'comparatives and superlatives - comparative and superlative in context'
+        - 'personal pronouns - pronouns: "ik", "je/jij", "hij/zij"'
+        - 'personal pronouns - subject pronouns in sentences'
+        - 'personal pronouns - object pronouns'
+        - 'possessive pronouns - common possessive pronouns: "mijn", "jouw"'
+        - 'possessive pronouns - using possessive pronouns in sentences'
+        - 'possessive pronouns - pronoun agreement'
+        - 'demonstrative pronouns - "dit" (this), "dat" (that)'
+        - 'demonstrative pronouns - demonstrative pronouns in context'
+        - 'demonstrative pronouns - difference between "dit" and "dat"'
+        - 'prepositions of place - common prepositions: "in", "op", "onder"'
+        - 'prepositions of place - prepositions in descriptive sentences'
+        - 'prepositions of place - prepositional phrases'
+        - 'prepositions of time - time prepositions: "voor", "tijdens", "na"'
+        - 'prepositions of time - using prepositions in temporal sentences'
+        - 'prepositions of time - time expressions with prepositions'
+        - 'basic conjunctions - conjunctions: "en", "maar", "of"'
+        - 'basic conjunctions - combining sentences with conjunctions'
+        - 'basic conjunctions - conjunction placement'
+        - 'simple sentences construction - subject-verb-object structure'
+        - 'simple sentences construction - variations in sentence structure'
+        - 'simple sentences construction - building sentences with basic vocabulary'
+        - 'negative sentences - using "niet" and "geen"'
+        - 'negative sentences - placement of negative words'
+        - 'negative sentences - differentiating between "niet" and "geen"'
+        - 'basic questions formation - question sentence structure'
+        - 'basic questions formation - yes/no questions vs. open-ended questions'
+        - 'basic questions formation - intonation and punctuation in questions'
+        - 'imperatives - forming commands and requests'
+        - 'imperatives - imperative sentence structure'
+        - 'imperatives - politeness in imperatives'
+        - 'simple past tense regular verbs - conjugation patterns for regular verbs'
+        - 'simple past tense regular verbs - usage of simple past tense'
+        - 'simple past tense regular verbs - time expressions with past tense'
+        - 'simple past tense irregular verbs - common irregular past tense forms'
+        - 'simple past tense irregular verbs - irregular verbs in past tense sentences'
+    - name: vocabulary
+      template: >
+        I am learning Dutch. Provide me with 10 words related to "%s", along
+        with their translations and example sentences.
+      arguments:
+        - adjectives (descriptions)
+        - adverbs
+        - agriculture
+        - animals
+        - art
+        - astronomy and space
+        - beauty and cosmetics
+        - beverages
+        - biology
+        - birds
+        - body functions
+        - body parts
+        - buildings
+        - business and finance
+        - chemistry
+        - cities and towns
+        - clothing
+        - clothing and fashion
+        - colors
+        - conjunctions
+        - construction and buildings
+        - cooking and kitchen utensils
+        - countries and nationalities
+        - cultural traditions
+        - daily routines
+        - days of the week
+        - directions
+        - disasters
+        - diseases and symptoms
+        - drinks
+        - ecology
+        - education
+        - electronics
+        - emotions and feelings
+        - energy and resources
+        - engineering
+        - environment
+        - expressions and idioms
+        - family members
+        - film and theater
+        - fitness and exercise
+        - food and culinary terms
+        - foods
+        - fruits
+        - furniture
+        - geography (mountains, rivers, etc.)
+        - geology
+        - government and politics
+        - greetings
+        - health and medicine
+        - healthcare and wellness
+        - hobbies
+        - holidays and celebrations
+        - hospitality
+        - household items
+        - insects
+        - instruments
+        - interjections
+        - legal terms
+        - literature
+        - mathematics
+        - meals (breakfast, lunch, dinner)
+        - media
+        - mental health
+        - military
+        - months
+        - music
+        - mythology and folklore
+        - nature (trees, flowers, etc.)
+        - numbers
+        - occupations
+        - personal traits
+        - pets
+        - physics
+        - polite phrases
+        - prepositions
+        - question words
+        - real estate
+        - religion
+        - restaurants and dining
+        - rooms in a house
+        - safety and emergencies
+        - school subjects
+        - sea creatures
+        - seasons
+        - shopping
+        - slang and colloquialisms
+        - sports
+        - technology
+        - time (hours, minutes)
+        - tools
+        - tourism
+        - transportation
+        - travel
+        - university life
+        - vegetables
+        - vehicles
+        - verbs (actions)
+        - weather
+        - wildlife

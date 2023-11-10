@@ -1,0 +1,5 @@
+/bin/
+/tmp/
+/vendor/
+/.vault_pass.txt
+/config.yaml
