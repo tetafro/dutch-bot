@@ -48,6 +48,10 @@ run:
 docker:
 	@ docker build -t ghcr.io/tetafro/dutch-bot .
 
+.PHONY: config
+config:
+	@ ansible-vault encrypt --output config.yaml.vault config.yaml
+
 .PHONY: deploy
 deploy:
 	@ ansible-playbook \
