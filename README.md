@@ -30,7 +30,7 @@ Run in a loop on schedule, results are published to Telegram
 
 Generate text and print results without publishing to Telegram
 ```sh
-./bin/dutch-bot -once -debug
+./bin/dutch-bot -debug -once topic
 ```
 
 ## Encrypted config
