@@ -113,7 +113,8 @@ func (b *Bot) generate(ctx context.Context, prompt string) (string, error) {
 	defer cancel()
 
 	req := openai.ChatCompletionRequest{
-		Model: openai.GPT3Dot5Turbo0125,
+		// Model: "gpt-4o-mini",
+		Model: openai.GPT4oMini,
 		Messages: []openai.ChatCompletionMessage{{
 			Role:    openai.ChatMessageRoleUser,
 			Content: prompt,
